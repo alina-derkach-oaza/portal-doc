@@ -3,7 +3,7 @@
 site_name: Percona Platform
 site_description: Percona Platform Documentation
 site_author: Percona LLC
-copyright: Percona LLC, &#169; 2021
+copyright: Percona LLC, &#169; 2023
 
 site_url: "https://docs.percona.com/percona-platform/"
 repo_name: /percona-platform/portal-doc
@@ -59,42 +59,34 @@ extra_javascript:
   # - js/version-select.js
 
 markdown_extensions:
-  - attr_list
-  - toc:
-      permalink: True
-  - admonition
-  - footnotes
-  - def_list # https://michelf.ca/projects/php-markdown/extra/#def-list
-  - meta
-  - smarty:
+  attr_list: {}
+  toc:
+    permalink: True
+  admonition: {}
+  footnotes: {}
+  def_list: {} # https://michelf.ca/projects/php-markdown/extra/#def-list
+  meta: {}
+  smarty:
       smart_angled_quotes: true
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.tabbed
-  - pymdownx.tilde
-  - pymdownx.superfences
-  - pymdownx.details
-  - pymdownx.highlight:
+  pymdownx.mark: {}
+  pymdownx.smartsymbols: {}
+  pymdownx.tabbed: {}
+  pymdownx.tilde: {}
+  pymdownx.superfences: {}
+  pymdownx.details: {}
+  pymdownx.highlight:
       linenums: false
-    lightgallery: {}
-    pymdownx.inlinehilite: {}
-    pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
-    - attr_list
-    - pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
-
+  pymdownx.inlinehilite: {}
+  pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
-  - search
-  - git-revision-date
-  - search
   section-index: {}
   search: 
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - macros:
+  git-revision-date: {}
+  macros:
       include_yaml:
 #        - 'variables.yml' # Use in markdown as '{{ VAR }}'
 
